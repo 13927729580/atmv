@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+
+	<Resource name="jdbc/qfsoft_db_timp" auth="Container" type="org.apache.tomcat.jdbc.pool.DataSource" factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" defaultAutoCommit="true"
+		testWhileIdle="true" testOnBorrow="true" testOnReturn="true" validationQuery="SELECT 1" validationInterval="30000" timeBetweenEvictionRunsMillis="30000" commitOnReturn="true"
+		jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer" maxActive="50" minIdle="5" maxIdle="50" maxWait="30000"
+		initialSize="10" removeAbandonedTimeout="3000" removeAbandoned="true" logAbandoned="true" minEvictableIdleTimeMillis="30000" jmxEnabled="true" driverClassName="org.mariadb.jdbc.Driver"
+		url="jdbc:mariadb://vm.centos:3306/qfsoft_db_timp?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8" username="test" password="test1234" />
+
+	<Resource name="jdbc/qfsoft_db_atmp" auth="Container" type="org.apache.tomcat.jdbc.pool.DataSource" factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" defaultAutoCommit="true"
+		testWhileIdle="true" testOnBorrow="true" testOnReturn="true" validationQuery="SELECT 1" validationInterval="30000" timeBetweenEvictionRunsMillis="30000" commitOnReturn="true"
+		jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer" maxActive="50" minIdle="5" maxIdle="50" maxWait="30000"
+		initialSize="10" removeAbandonedTimeout="3000" removeAbandoned="true" logAbandoned="true" minEvictableIdleTimeMillis="30000" jmxEnabled="true" driverClassName="org.mariadb.jdbc.Driver"
+		url="jdbc:mariadb://vm.centos:3306/qfsoft_db_atmp?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8" username="test" password="test1234" />
+
+</Context>
